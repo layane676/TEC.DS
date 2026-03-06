@@ -25,6 +25,7 @@
                     alert(`${hero.nome} usou ${habilidade.nome}!
                     Causou ${habilidade.dano} de dano.`);
             }
+    hero.hp -= boss.ataquefixo;
     alert(`***STATUS*** \n
         Boss: ${boss.hp} | Hero: ${hero.hp} ` )
     }
