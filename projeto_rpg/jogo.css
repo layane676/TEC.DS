@@ -1,0 +1,10 @@
+.list-group-item {
+            background-color: rgba(3, 75, 45, 0.575);
+            color:aliceblue;
+            text-align: justify;
+            font-family: "UnifrakturMaguntia", cursive;
+        } 
+ .btn{
+        background-color: rgba(3, 75, 45, 0.575);
+        color:aliceblue;
+    }
