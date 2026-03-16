@@ -2,9 +2,40 @@
             background-color: rgba(3, 75, 45, 0.575);
             color:aliceblue;
             text-align: justify;
-            font-family: "UnifrakturMaguntia", cursive;
+            font-family: "UnifrakturCook", cursive;
+            width:200%;
+            height: auto;
         } 
- .btn{
+.progresso {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+ 
+    .btn{
         background-color: rgba(3, 75, 45, 0.575);
         color:aliceblue;
+        text-align: center;
+        font-family: "UnifrakturCook", cursive;
     }
+
+.img-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+    top: -60px; /* Move 20px para cima */
+    left: 100px; /* Move 20px para a direita */
+}
+
+.img-boss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+    left: -200px; /* Move 40px para a esquerda */
+}
+
