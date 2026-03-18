@@ -2,9 +2,8 @@
             background-color: rgba(3, 75, 45, 0.575);
             color:aliceblue;
             text-align: justify;
-            font-family: "UnifrakturCook", cursive;
-            width:200%;
-            height: auto;
+            /* font-family: "UnifrakturCook", cursive; */
+            
         } 
 .progresso {
     width: 100%;
@@ -17,7 +16,7 @@
         background-color: rgba(3, 75, 45, 0.575);
         color:aliceblue;
         text-align: center;
-        font-family: "UnifrakturCook", cursive;
+        /* font-family: "UnifrakturCook", cursive; */
     }
 
 .img-hero {
@@ -39,3 +38,7 @@
     left: -200px; /* Move 40px para a esquerda */
 }
 
+body{
+    /* font-family: "UnifrakturCook", cursive; */
+    font-family: "Iosevka Charon Mono", monospace;
+}
