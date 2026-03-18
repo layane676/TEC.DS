@@ -1,0 +1,40 @@
+
+
+.list-group-item{
+    background-color: rgba(9, 40, 54, 0.685);
+    color: white;
+ 
+}
+
+.img-hero{
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: -20px;  /* Move 20px para cima da sua posição original */
+    left: 400px; /* Move 30px para a direita da sua posição original */
+
+}
+
+.img-boss{
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: 0px;  /* Move 20px para cima da sua posição original */
+    left: 0px; /* Move 30px para a direita da sua posição original */
+}
+
+  .btn-group button {
+        width: 100px;
+        height: 30px;
+        margin: 5px;
+        background-color: rgba(14, 80, 202, 0.945);
+        color: white;
+        display: inline-flex;      /* ou flex */
+        justify-content: center;   /* centraliza horizontal */
+        align-items: center;       /* centraliza vertical */
+        text-align: center;        /* centraliza múltiplas linhas */
+}
+
+body{
+    font-family: "Iosevka Charon Mono", monospace;
+}
