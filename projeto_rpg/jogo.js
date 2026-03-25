@@ -30,12 +30,14 @@ class Personagem{
     boss_atacar(alvo){
         if(this.energia == 100){
             alvo.hp -= 15;
-            this.energia = 0 ;
+            this.energia = 0;
+            return ` Boss usou sua habilidade `
 
         } else {
-            this.energia += 50;
+            this.energia += 20;
+            return ` Boss carregou o ataque `
         }
-    };
+    };       
             
 
 }
@@ -61,14 +63,26 @@ document.getElementById("titulo-heroi").textContent = `🗡️ ${hero.titulo}`;
 document.getElementById("nome-boss").textContent = `${boss.nome}`;
 document.getElementById("titulo-boss").textContent = `💀🪄 ${boss.titulo}`;
 
-const atualizarInterface = (mensagem)=> {
+// Criar array de turnos
+const turnos = ["Aguardando Ação"];
+
+const atualizarInterface = (msg_hero, msg_boss)=> {
     console.log(hero.mana)
     document.getElementById("hp-heroi").value = hero.hp;
     document.getElementById("mp-heroi").value = hero.mana;
     document.getElementById("energia-heroi").value = hero.energia;
     document.getElementById("hp-boss").value = boss.hp;
     document.getElementById("energia-boss").value = boss.energia;
-
+    //turnos
+    document.getElementById("log-hero").textContent = msg_hero;
+    document.getElementById("log-boss").textContent = msg_boss;
+    //mensage, de vitora/derrota
+    if (boss.hp<= 0){
+        document.getElementById("tela").innerHTML = "Você vemceu !!";
+    }
+    if (hero.hp<= 0){
+        document.getElementById("tela").innerHTML = "Você perdeu !!";
+    }
 }
 
 
@@ -86,9 +100,9 @@ listaHabilidades.forEach(hab=> {
     btn.classList.add("btn");
     container.appendChild(btn);
     btn.onclick = () => {
-        let mensagem = hero.atacar(boss, hab);
-        atualizarInterface(mensagem);  
-       boss.boss_atacar(hero);
+        let msg_heroi = hero.atacar(boss, hab);
+        let msg_boss = boss.boss_atacar(hero);
+        atualizarInterface(msg_heroi, msg_boss);  
     }
 });
 
